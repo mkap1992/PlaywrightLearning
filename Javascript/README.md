@@ -27,6 +27,11 @@ Javascript/
     +-- hoisting.js
     +-- let_hoisting.js
     +-- var_scope.js
++-- Chapter_03_Literal/
+    +-- literal.js
+    +-- number_literal.js
+    +-- null_vs_undefined.js
+    +-- string_literal.js
 ```
 
 ## Chapter 01: Basics
@@ -108,6 +113,76 @@ node Chapter_02_Declaration/let_hoisting.js
 
 Placeholder file for `var` scope examples.
 
+## Chapter 03: Literals
+
+### `literal.js`
+
+Shows common JavaScript literal examples, including string, number, boolean, null, object, and array literals.
+
+Run:
+
+```powershell
+node Chapter_03_Literal/literal.js
+```
+
+### `number_literal.js`
+
+Shows examples of number literals in JavaScript.
+
+Topics:
+
+- Integer numbers
+- Decimal numbers
+- Negative numbers
+- Binary, octal, and hexadecimal numbers
+- Exponential notation
+- Numeric separators
+- Special number values such as `Infinity` and `NaN`
+
+Run:
+
+```powershell
+node Chapter_03_Literal/number_literal.js
+```
+
+### `string_literal.js`
+
+Shows examples of string literals in JavaScript.
+
+Topics:
+
+- Strings with single quotes, double quotes, and backticks
+- Escape characters
+- New line strings
+- Template literals
+- Variables and expressions inside template literals
+- Multi-line strings
+- Empty strings
+- String length
+
+Run:
+
+```powershell
+node Chapter_03_Literal/string_literal.js
+```
+
+### `null_vs_undefined.js`
+
+Explains the difference between `null` and `undefined`.
+
+| Topic | `undefined` | `null` |
+| --- | --- | --- |
+| Meaning | Variable is declared but value is not assigned | Empty value is assigned intentionally |
+| Assigned by | Usually JavaScript | Usually developer |
+| Type | `undefined` | `object` |
+| Example | `let age;` | `let age = null;` |
+
+Run:
+
+```powershell
+node Chapter_03_Literal/null_vs_undefined.js
+```
+
 ## Variable Declaration Quick Reference
 
 ```javascript
@@ -117,6 +192,41 @@ const country = "India"; // modern style, block-scoped, value should not change
 ```
 
 Prefer `let` when a value can change and `const` when it should stay the same.
+
+## Scope Of `var`, `let`, And `const`
+
+| Keyword | Scope | Can be re-declared? | Can be updated? | Hoisting behavior | Best use |
+| --- | --- | --- | --- | --- | --- |
+| `var` | Function scope | Yes | Yes | Hoisted and initialized with `undefined` | Older JavaScript code |
+| `let` | Block scope | No, not in the same scope | Yes | Hoisted but not initialized, so accessing before declaration gives `ReferenceError` | Values that need to change |
+| `const` | Block scope | No, not in the same scope | No | Hoisted but not initialized, so accessing before declaration gives `ReferenceError` | Values that should not be reassigned |
+
+### Function Scope Example With `var`
+
+```javascript
+function testVarScope() {
+    if (true) {
+        var message = "Hello";
+    }
+
+    console.log(message); // Accessible because var has function scope
+}
+```
+
+### Block Scope Example With `let` And `const`
+
+```javascript
+if (true) {
+    let userName = "Rahul";
+    const country = "India";
+
+    console.log(userName);
+    console.log(country);
+}
+
+// console.log(userName); // Error because let has block scope
+// console.log(country);  // Error because const has block scope
+```
 
 ## Variable Naming Rules
 
