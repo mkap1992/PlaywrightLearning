@@ -32,6 +32,11 @@ Javascript/
     +-- number_literal.js
     +-- null_vs_undefined.js
     +-- string_literal.js
++-- Chapter_04_Operator/
+    +-- increment_operator.js
+    +-- ternary_operator.js
++-- Chapter_05_Statements/
+    +-- if_else_statement.js
 ```
 
 ## Chapter 01: Basics
@@ -181,6 +186,58 @@ Run:
 
 ```powershell
 node Chapter_03_Literal/null_vs_undefined.js
+```
+
+## Chapter 04: Operators
+
+### `increment_operator.js`
+
+Shows increment and decrement operator examples.
+
+Topics:
+
+- Post-increment with `number++`
+- Pre-increment with `++number`
+- Post-decrement with `number--`
+- Pre-decrement with `--number`
+- Increment and decrement inside loops
+
+Run:
+
+```powershell
+node Chapter_04_Operator/increment_operator.js
+```
+
+### `ternary_operator.js`
+
+Shows how to use the ternary operator for simple conditional expressions.
+
+Run:
+
+```powershell
+node Chapter_04_Operator/ternary_operator.js
+```
+
+## Chapter 05: Statements
+
+### `if_else_statement.js`
+
+Shows how to use `if`, `else if`, and `else` statements for decision making.
+
+Topics:
+
+- Basic `if` condition
+- `if else` condition
+- Multiple `else if` conditions
+- Complex conditions with `&&` and `||`
+- Checking even and odd numbers
+- Checking grades based on marks
+- Checking leap years
+
+Run:
+
+```powershell
+node Chapter_05_Statements/if_else_statement.js
 ```
 
 ## Variable Declaration Quick Reference
