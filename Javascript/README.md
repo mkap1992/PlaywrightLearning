@@ -36,7 +36,16 @@ Javascript/
     +-- increment_operator.js
     +-- ternary_operator.js
 +-- Chapter_05_Statements/
-    +-- if_else_statement.js
+|   +-- if_else_statement.js
++-- Chapter_6_Loops/
+|   +-- Forloop_example.js
+|   +-- While_DoWhile_example.js
++-- Chapter_7_Arrays/
+    +-- Access_array
+    +-- Array_manipulation.js
+    +-- Arrays_1.js
+    +-- BrowserEx.js
+    +-- Iteratearray.js
 ```
 
 ## Chapter 01: Basics
@@ -233,11 +242,121 @@ Topics:
 - Checking even and odd numbers
 - Checking grades based on marks
 - Checking leap years
+- Switch case statement
 
 Run:
 
 ```powershell
 node Chapter_05_Statements/if_else_statement.js
+```
+
+## Chapter 06: Loops
+
+### `Forloop_example.js`
+
+Shows how to use a `for` loop for repeated actions.
+
+Topics:
+
+- Printing numbers from 1 to 5
+- Looping through an array with an index
+- Reading array values using `fruits[index]`
+
+Run:
+
+```powershell
+node Chapter_6_Loops/Forloop_example.js
+```
+
+### `While_DoWhile_example.js`
+
+Shows `while` and `do while` loops using QA-style examples.
+
+Topics:
+
+- Checking order status until it becomes `Completed`
+- Using retry limits with a `while` loop
+- Stopping a loop with `break`
+- Running a payment retry test at least once with `do while`
+
+Run:
+
+```powershell
+node Chapter_6_Loops/While_DoWhile_example.js
+```
+
+## Chapter 07: Arrays
+
+### `Arrays_1.js`
+
+Shows different ways to create arrays in JavaScript.
+
+Topics:
+
+- Empty arrays
+- Arrays with strings, numbers, booleans, and mixed values
+- Creating arrays with `new Array()`
+- Creating arrays with `Array.of()`
+- Creating arrays with `Array.from()`
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/Arrays_1.js
+```
+
+### `Access_array`
+
+Shows how to access array values by index and with the `at()` method.
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/Access_array
+```
+
+### `Array_manipulation.js`
+
+Shows common array manipulation methods.
+
+Topics:
+
+- Adding items with `push()` and `unshift()`
+- Removing items with `pop()` and `shift()`
+- Inserting and removing items with `splice()`
+- Checking array length
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/Array_manipulation.js
+```
+
+### `BrowserEx.js`
+
+Shows a browser list example using arrays, loops, condition checks, and `splice()`.
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/BrowserEx.js
+```
+
+### `Iteratearray.js`
+
+Shows different ways to iterate through arrays.
+
+Topics:
+
+- Traditional `for` loop
+- `for...of` loop
+- `forEach()` method
+- `for...in` loop
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/Iteratearray.js
 ```
 
 ## Variable Declaration Quick Reference
