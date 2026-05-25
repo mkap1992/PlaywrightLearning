@@ -1,0 +1,8 @@
+let status = ["Passed", "Failed", "Skip"];
+console.log(status[0]); // Output: Passed
+console.log(status[1]); // Output: Failed
+console.log(status[2]); // Output: Skip 
+console.log(status.at(-1)); // Output: Skip
+console.log(status.at(-2)); // Output: Failed
+console.log(status.at(-3)); // Output: Passed
+console.log(status.at(-4)); // Output: undefined

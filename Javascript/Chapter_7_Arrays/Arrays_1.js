@@ -1,0 +1,16 @@
+let fruits = [];
+let fruits_fresh = ["Apple", "Banana", "Cherry"];
+let num_array = [1, 2, 3, 4, 5];
+let mixed_array = ["arjun", 25, true, 3.14];
+let browser_info = ["Chrome", "Firefox", "Safari", "Edge"];
+let empty_array = new Array(4);
+console.log(fruits);
+console.log(fruits_fresh);
+console.log(num_array);
+console.log(mixed_array);
+console.log(browser_info);
+console.log(empty_array);
+let names = Array.of("Alice", "Bob", "Charlie");
+console.log(names);
+let more_fruits = Array.from(["Mango", "Pineapple", "Grapes"]);
+console.log(more_fruits);

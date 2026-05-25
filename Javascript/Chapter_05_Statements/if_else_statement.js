@@ -118,3 +118,46 @@ if(x%4 === 0 && (x%100 !== 0 || x%400 === 0) )
   {
   console.log("The year is a leap year.");
   }
+
+// Example: Switch case statement
+// Switch is used when we compare one value with many possible cases.
+
+let dayNumber = 3;
+
+switch (dayNumber) {
+  case 1:
+    console.log("Monday");
+    break;
+
+  case 2:
+    console.log("Tuesday");
+    break;
+
+  case 3:
+    console.log("Wednesday");
+    break;
+
+  case 4:
+    console.log("Thursday");
+    break;
+
+  case 5:
+    console.log("Friday");
+    break;
+
+  case 6:
+    console.log("Saturday");
+    break;
+
+  case 7:
+    console.log("Sunday");
+    break;
+
+  default:
+    console.log("Invalid day number.");
+}
+
+// Note:
+// case checks for a matching value.
+// break stops the switch after a match is found.
+// default runs when no case matches.
