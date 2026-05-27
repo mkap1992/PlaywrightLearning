@@ -46,7 +46,25 @@ Javascript/
     +-- Arrays_1.js
     +-- BrowserEx.js
     +-- Iteratearray.js
+    +-- Sorting.js
++-- Chapter_8_Functions/
+    +-- ArrowFunction.js
+    +-- Introduction.js
+    +-- Type2Function.js
 ```
+
+## Chapter Overview
+
+| Chapter | Folder | Topics |
+| --- | --- | --- |
+| 01 | `Chapter_01_Basics` | Node.js setup, basics, and variables |
+| 02 | `Chapter_02_Declaration` | Declarations, hoisting, and scope |
+| 03 | `Chapter_03_Literal` | String, number, null, undefined, and other literals |
+| 04 | `Chapter_04_Operator` | Increment, decrement, and ternary operators |
+| 05 | `Chapter_05_Statements` | Conditional statements and switch case |
+| 06 | `Chapter_6_Loops` | `for`, `while`, and `do while` loops |
+| 07 | `Chapter_7_Arrays` | Array creation, access, iteration, sorting, slicing, and combining |
+| 08 | `Chapter_8_Functions` | Function basics, methods, arguments, return values, and arrow functions |
 
 ## Chapter 01: Basics
 
@@ -357,6 +375,79 @@ Run:
 
 ```powershell
 node Chapter_7_Arrays/Iteratearray.js
+```
+
+### `Sorting.js`
+
+Shows how to sort arrays and combine arrays.
+
+Topics:
+
+- Sorting strings in ascending and descending order
+- Sorting numbers with compare functions
+- Understanding default sort behavior with numbers
+- Using `slice()` to copy selected array values
+- Combining arrays with `concat()` and the spread operator
+
+Run:
+
+```powershell
+node Chapter_7_Arrays/Sorting.js
+```
+
+## Chapter 08: Functions
+
+### `ArrowFunction.js`
+
+Shows arrow functions introduced in ES6.
+
+Topics:
+
+- Regular function expression
+- Arrow function expression
+- Short arrow function syntax
+- Returning values from arrow functions
+- Using template literals inside arrow functions
+- Basic difference between regular functions and arrow functions
+
+Run:
+
+```powershell
+node Chapter_8_Functions/ArrowFunction.js
+```
+
+### `Introduction.js`
+
+Introduces JavaScript functions and methods.
+
+Topics:
+
+- Function as a reusable block of code
+- Calling or invoking a function
+- Defining a function with the `function` keyword
+- Difference between a function and a method
+
+Run:
+
+```powershell
+node Chapter_8_Functions/Introduction.js
+```
+
+### `Type2Function.js`
+
+Shows different function examples based on arguments and return values.
+
+Topics:
+
+- Function with argument and no return value
+- Function with no argument and return value
+- Function with argument and return value
+- Understanding `undefined` when a function does not return anything
+
+Run:
+
+```powershell
+node Chapter_8_Functions/Type2Function.js
 ```
 
 ## Variable Declaration Quick Reference
