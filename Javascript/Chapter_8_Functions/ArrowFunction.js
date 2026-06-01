@@ -12,6 +12,31 @@ const addArrow = (a, b) => {
 };
 const addArrowShort = (a, b) => a + b; // Shorter syntax for single expression
 
+const functionComparison = [
+    {
+        Feature: "Syntax",
+        "Normal Function": "function add(a, b) { return a + b; }",
+        "Arrow Function": "const add = (a, b) => a + b;"
+    },
+    {
+        Feature: "this keyword",
+        "Normal Function": "Has its own this",
+        "Arrow Function": "Uses this from its surrounding scope"
+    },
+    {
+        Feature: "arguments object",
+        "Normal Function": "Available inside the function",
+        "Arrow Function": "Not available directly"
+    },
+    {
+        Feature: "Best use",
+        "Normal Function": "Methods, constructors, reusable functions",
+        "Arrow Function": "Short callbacks and simple expressions"
+    }
+];
+
+console.table(functionComparison);
+
 console.log("Regular function add(2, 3):", add(2, 3));
 console.log("Arrow function addArrow(2, 3):", addArrow(2, 3));
 console.log("Arrow function addArrowShort(2, 3):", addArrowShort(2, 3));

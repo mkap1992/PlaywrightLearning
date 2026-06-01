@@ -6,9 +6,9 @@ This folder contains small JavaScript practice files used while learning JavaScr
 
 - Install Node.js.
 - Open this project in VS Code.
-- Run JavaScript files from the `Javascript` folder.
+- Run commands from the `Javascript` folder.
 
-Check your Node.js setup:
+Check Node.js setup:
 
 ```powershell
 node Chapter_01_Basics/Js_Verify_Setup.js
@@ -23,48 +23,84 @@ Javascript/
 |   +-- Js_Verify_Setup.js
 |   +-- Js_Variables.js
 +-- Chapter_02_Declaration/
-    +-- Declaration.js
-    +-- hoisting.js
-    +-- let_hoisting.js
-    +-- var_scope.js
+|   +-- Declaration.js
+|   +-- hoisting.js
+|   +-- let_hoisting.js
+|   +-- var_scope.js
 +-- Chapter_03_Literal/
-    +-- literal.js
-    +-- number_literal.js
-    +-- null_vs_undefined.js
-    +-- string_literal.js
+|   +-- literal.js
+|   +-- number_literal.js
+|   +-- null_vs_undefined.js
+|   +-- string_literal.js
 +-- Chapter_04_Operator/
-    +-- increment_operator.js
-    +-- ternary_operator.js
+|   +-- increment_operator.js
+|   +-- ternary_operator.js
 +-- Chapter_05_Statements/
 |   +-- if_else_statement.js
 +-- Chapter_6_Loops/
 |   +-- Forloop_example.js
 |   +-- While_DoWhile_example.js
 +-- Chapter_7_Arrays/
-    +-- Access_array
-    +-- Array_manipulation.js
-    +-- Arrays_1.js
-    +-- BrowserEx.js
-    +-- Iteratearray.js
-    +-- Sorting.js
+|   +-- Access_array
+|   +-- Array_manipulation.js
+|   +-- Arrays_1.js
+|   +-- BrowserEx.js
+|   +-- Iteratearray.js
+|   +-- Sorting.js
 +-- Chapter_8_Functions/
-    +-- ArrowFunction.js
-    +-- Introduction.js
-    +-- Type2Function.js
+|   +-- ArrowFunction.js
+|   +-- Closure.js
+|   +-- DefaultAndRestParams.js
+|   +-- FunctionInterviewQuestions.js
+|   +-- IIFE.js
+|   +-- Introduction.js
+|   +-- Type2Function.js
++-- Interview_Quesions/
+|   +-- Chapter_01_Basics_Interview.js
+|   +-- Chapter_02_Declarations_Interview.js
+|   +-- Chapter_03_Literals_Interview.js
+|   +-- Chapter_04_Operators_Interview.js
+|   +-- Chapter_05_Statements_Interview.js
+|   +-- Chapter_06_Loops_Interview.js
+|   +-- Chapter_07_Arrays_Interview.js
+|   +-- Chapter_08_Functions_Interview.js
++-- README.md
 ```
 
 ## Chapter Overview
 
-| Chapter | Folder | Topics |
+| Chapter | Folder | Main Topics |
 | --- | --- | --- |
-| 01 | `Chapter_01_Basics` | Node.js setup, basics, and variables |
-| 02 | `Chapter_02_Declaration` | Declarations, hoisting, and scope |
-| 03 | `Chapter_03_Literal` | String, number, null, undefined, and other literals |
-| 04 | `Chapter_04_Operator` | Increment, decrement, and ternary operators |
-| 05 | `Chapter_05_Statements` | Conditional statements and switch case |
-| 06 | `Chapter_6_Loops` | `for`, `while`, and `do while` loops |
-| 07 | `Chapter_7_Arrays` | Array creation, access, iteration, sorting, slicing, and combining |
-| 08 | `Chapter_8_Functions` | Function basics, methods, arguments, return values, and arrow functions |
+| 01 | `Chapter_01_Basics` | Node.js setup, basic output, variables, naming rules, VS Code shortcuts |
+| 02 | `Chapter_02_Declaration` | Declarations, `var`, `let`, hoisting, temporal dead zone, scope |
+| 03 | `Chapter_03_Literal` | String, number, boolean, null, undefined, binary, octal, hexadecimal literals |
+| 04 | `Chapter_04_Operator` | Increment, decrement, ternary operator, nullish coalescing operator |
+| 05 | `Chapter_05_Statements` | `if`, `else if`, `else`, complex conditions, switch case |
+| 06 | `Chapter_6_Loops` | `for`, `while`, `do while`, loop examples, retry examples |
+| 07 | `Chapter_7_Arrays` | Array creation, access, manipulation, iteration, sorting, slicing, combining |
+| 08 | `Chapter_8_Functions` | Function basics, function types, closures, default parameters, rest parameters, arrow functions, IIFE, interview questions |
+
+## Interview Questions
+
+The `Interview_Quesions` folder contains chapter-wise JavaScript interview practice files. Each file includes both theoretical questions and practical runnable examples.
+
+| File | Covers |
+| --- | --- |
+| `Chapter_01_Basics_Interview.js` | JavaScript basics, Node.js, variables, naming rules |
+| `Chapter_02_Declarations_Interview.js` | Declarations, hoisting, temporal dead zone, block scope |
+| `Chapter_03_Literals_Interview.js` | Literals, strings, numbers, `null`, `undefined`, `NaN` |
+| `Chapter_04_Operators_Interview.js` | Increment, decrement, ternary, nullish coalescing |
+| `Chapter_05_Statements_Interview.js` | `if`, `else if`, `switch`, conditions |
+| `Chapter_06_Loops_Interview.js` | `for`, `while`, `do while`, `break`, loop practice |
+| `Chapter_07_Arrays_Interview.js` | Array access, manipulation, sorting, filtering, mapping |
+| `Chapter_08_Functions_Interview.js` | Functions, callbacks, closures, IIFE, recursion |
+
+Run examples:
+
+```powershell
+node Interview_Quesions/Chapter_01_Basics_Interview.js
+node Interview_Quesions/Chapter_08_Functions_Interview.js
+```
 
 ## Chapter 01: Basics
 
@@ -90,7 +126,7 @@ node Chapter_01_Basics/Js_Verify_Setup.js
 
 ### `Js_Variables.js`
 
-Covers the basics of variables in JavaScript.
+Covers the basics of JavaScript variables.
 
 Topics:
 
@@ -99,9 +135,9 @@ Topics:
 - Variable naming rules
 - Valid and invalid variable names
 - Case-sensitive variable names
-- Naming styles such as `camelCase`, `PascalCase`, `snake_case`, and `UPPER_SNAKE_CASE`
-- Why JavaScript variable names cannot use `kebab-case`
-- Useful VS Code shortcuts for Windows
+- Naming styles: `camelCase`, `PascalCase`, `snake_case`, and `UPPER_SNAKE_CASE`
+- Why JavaScript variables cannot use `kebab-case`
+- Basic VS Code shortcuts for Windows
 
 Run:
 
@@ -113,17 +149,18 @@ node Chapter_01_Basics/Js_Variables.js
 
 ### `Declaration.js`
 
-Placeholder file for declaration practice.
+Practice file for declaration examples.
 
 ### `hoisting.js`
 
-Shows how `var` is hoisted and initialized with `undefined` before assignment.
+Shows hoisting behavior with `var`, `let`, and the temporal dead zone.
 
-Important note:
+Topics:
 
-- `var` declarations are hoisted and initialized with `undefined`.
-- `let` and `const` are hoisted too, but they stay in the temporal dead zone until the declaration line runs.
-- Accessing `let` or `const` before declaration causes a `ReferenceError`.
+- `var` declarations are hoisted and initialized with `undefined`
+- Accessing `var` before assignment
+- `let` and `const` are hoisted but not initialized
+- Accessing `let` before declaration causes `ReferenceError`
 
 Run:
 
@@ -131,9 +168,17 @@ Run:
 node Chapter_02_Declaration/hoisting.js
 ```
 
+Note: this file intentionally includes a `ReferenceError` example.
+
 ### `let_hoisting.js`
 
-Demonstrates block scope and the temporal dead zone behavior of `let`.
+Shows block scope and temporal dead zone behavior with `let`.
+
+Topics:
+
+- Block-scoped `let`
+- Variable shadowing inside a block
+- Why accessing a block variable before declaration causes `ReferenceError`
 
 Run:
 
@@ -141,15 +186,27 @@ Run:
 node Chapter_02_Declaration/let_hoisting.js
 ```
 
+Note: this file intentionally includes a `ReferenceError` example.
+
 ### `var_scope.js`
 
-Placeholder file for `var` scope examples.
+Practice file for `var` scope examples.
 
 ## Chapter 03: Literals
 
 ### `literal.js`
 
-Shows common JavaScript literal examples, including string, number, boolean, null, object, and array literals.
+Shows common JavaScript literal examples.
+
+Topics:
+
+- Number literal
+- String literal
+- Boolean literal
+- `null`
+- `undefined`
+- Binary, octal, and hexadecimal literals
+- Floating-point number
 
 Run:
 
@@ -159,17 +216,21 @@ node Chapter_03_Literal/literal.js
 
 ### `number_literal.js`
 
-Shows examples of number literals in JavaScript.
+Shows number literal examples in JavaScript.
 
 Topics:
 
 - Integer numbers
 - Decimal numbers
 - Negative numbers
-- Binary, octal, and hexadecimal numbers
+- Zero
+- Binary numbers with `0b`
+- Octal numbers with `0o`
+- Hexadecimal numbers with `0x`
 - Exponential notation
 - Numeric separators
-- Special number values such as `Infinity` and `NaN`
+- `Infinity` and `NaN`
+- `typeof` with numbers
 
 Run:
 
@@ -179,18 +240,21 @@ node Chapter_03_Literal/number_literal.js
 
 ### `string_literal.js`
 
-Shows examples of string literals in JavaScript.
+Shows string literal examples in JavaScript.
 
 Topics:
 
-- Strings with single quotes, double quotes, and backticks
+- Single quotes
+- Double quotes
+- Backticks
 - Escape characters
-- New line strings
-- Template literals
-- Variables and expressions inside template literals
-- Multi-line strings
+- New lines with `\n`
+- Template literals with variables
+- Template literals with expressions
+- Multi-line template literals
 - Empty strings
 - String length
+- `typeof` with strings
 
 Run:
 
@@ -219,15 +283,16 @@ node Chapter_03_Literal/null_vs_undefined.js
 
 ### `increment_operator.js`
 
-Shows increment and decrement operator examples.
+Shows increment and decrement operators.
 
 Topics:
 
 - Post-increment with `number++`
 - Pre-increment with `++number`
+- Increment inside a loop
 - Post-decrement with `number--`
 - Pre-decrement with `--number`
-- Increment and decrement inside loops
+- Decrement inside a loop
 
 Run:
 
@@ -237,7 +302,17 @@ node Chapter_04_Operator/increment_operator.js
 
 ### `ternary_operator.js`
 
-Shows how to use the ternary operator for simple conditional expressions.
+Shows the ternary operator and nullish coalescing operator.
+
+Topics:
+
+- Ternary syntax: `condition ? trueValue : falseValue`
+- Checking voting eligibility
+- Checking even and odd numbers
+- Nested ternary for grades
+- Nested ternary for temperature messages
+- Nullish coalescing with `??`
+- Difference between `||` and `??`
 
 Run:
 
@@ -249,18 +324,21 @@ node Chapter_04_Operator/ternary_operator.js
 
 ### `if_else_statement.js`
 
-Shows how to use `if`, `else if`, and `else` statements for decision making.
+Shows decision making with conditional statements.
 
 Topics:
 
 - Basic `if` condition
-- `if else` condition
-- Multiple `else if` conditions
-- Complex conditions with `&&` and `||`
-- Checking even and odd numbers
-- Checking grades based on marks
-- Checking leap years
-- Switch case statement
+- `if else`
+- `else if`
+- Checking weather
+- Checking login status
+- Complex conditions with `&&`
+- Even and odd number check
+- Grade calculation
+- Leap year check
+- `switch` case statement
+- `break` and `default` in switch
 
 Run:
 
@@ -272,13 +350,13 @@ node Chapter_05_Statements/if_else_statement.js
 
 ### `Forloop_example.js`
 
-Shows how to use a `for` loop for repeated actions.
+Shows basic `for` loop examples.
 
 Topics:
 
 - Printing numbers from 1 to 5
-- Looping through an array with an index
-- Reading array values using `fruits[index]`
+- Looping through an array by index
+- Reading values using `fruits[index]`
 
 Run:
 
@@ -293,9 +371,10 @@ Shows `while` and `do while` loops using QA-style examples.
 Topics:
 
 - Checking order status until it becomes `Completed`
-- Using retry limits with a `while` loop
+- Retry limit with a `while` loop
 - Stopping a loop with `break`
 - Running a payment retry test at least once with `do while`
+- Handling failed retry conditions
 
 Run:
 
@@ -307,15 +386,18 @@ node Chapter_6_Loops/While_DoWhile_example.js
 
 ### `Arrays_1.js`
 
-Shows different ways to create arrays in JavaScript.
+Shows different ways to create arrays.
 
 Topics:
 
 - Empty arrays
-- Arrays with strings, numbers, booleans, and mixed values
-- Creating arrays with `new Array()`
-- Creating arrays with `Array.of()`
-- Creating arrays with `Array.from()`
+- String arrays
+- Number arrays
+- Mixed arrays
+- Browser list arrays
+- `new Array()`
+- `Array.of()`
+- `Array.from()`
 
 Run:
 
@@ -325,7 +407,14 @@ node Chapter_7_Arrays/Arrays_1.js
 
 ### `Access_array`
 
-Shows how to access array values by index and with the `at()` method.
+Shows how to access array values.
+
+Topics:
+
+- Accessing array values by index
+- Using `.at()`
+- Negative indexes with `.at()`
+- Out-of-range array access
 
 Run:
 
@@ -339,9 +428,12 @@ Shows common array manipulation methods.
 
 Topics:
 
-- Adding items with `push()` and `unshift()`
-- Removing items with `pop()` and `shift()`
-- Inserting and removing items with `splice()`
+- Adding items with `push()`
+- Removing the last item with `pop()`
+- Adding items at the start with `unshift()`
+- Removing the first item with `shift()`
+- Inserting items with `splice()`
+- Removing items with `splice()`
 - Checking array length
 
 Run:
@@ -352,7 +444,15 @@ node Chapter_7_Arrays/Array_manipulation.js
 
 ### `BrowserEx.js`
 
-Shows a browser list example using arrays, loops, condition checks, and `splice()`.
+Shows a browser array practice example.
+
+Topics:
+
+- Adding a browser with `push()`
+- Looping through browser names
+- Finding a browser using `if`
+- Replacing an item with `splice()`
+- Stopping a loop with `break`
 
 Run:
 
@@ -367,9 +467,9 @@ Shows different ways to iterate through arrays.
 Topics:
 
 - Traditional `for` loop
-- `for...of` loop
-- `forEach()` method
-- `for...in` loop
+- `for...of`
+- `forEach()`
+- `for...in`
 
 Run:
 
@@ -379,15 +479,18 @@ node Chapter_7_Arrays/Iteratearray.js
 
 ### `Sorting.js`
 
-Shows how to sort arrays and combine arrays.
+Shows sorting, slicing, and combining arrays.
 
 Topics:
 
-- Sorting strings in ascending and descending order
+- Sorting strings in ascending order
+- Sorting strings in descending order
 - Sorting numbers with compare functions
-- Understanding default sort behavior with numbers
-- Using `slice()` to copy selected array values
-- Combining arrays with `concat()` and the spread operator
+- Understanding default number sort behavior
+- Copying selected values with `slice()`
+- Using negative indexes with `slice()`
+- Combining arrays with `concat()`
+- Combining arrays with the spread operator
 
 Run:
 
@@ -396,6 +499,108 @@ node Chapter_7_Arrays/Sorting.js
 ```
 
 ## Chapter 08: Functions
+
+### `Introduction.js`
+
+Introduces JavaScript functions and methods.
+
+Topics:
+
+- Function as a reusable block of code
+- Calling or invoking a function
+- Defining a function with the `function` keyword
+- Difference between a function and a method
+- Function with no argument and no return value
+- `undefined` return value when a function does not return anything
+
+Run:
+
+```powershell
+node Chapter_8_Functions/Introduction.js
+```
+
+### `Type2Function.js`
+
+Shows function examples based on arguments and return values.
+
+Topics:
+
+- Function with argument and no return value
+- Function with no argument and return value
+- Function with argument and return value
+- Template literal return value
+- Function expression
+- Understanding `undefined` when there is no `return`
+
+Run:
+
+```powershell
+node Chapter_8_Functions/Type2Function.js
+```
+
+### `DefaultAndRestParams.js`
+
+Shows default parameters and rest parameters in JavaScript functions.
+
+Topics:
+
+- Default parameter values
+- Multiple default parameters
+- Rest parameter with `...`
+- Collecting many arguments into an array
+- Using normal parameters with rest parameters
+- Using default parameters and rest parameters together
+
+Run:
+
+```powershell
+node Chapter_8_Functions/DefaultAndRestParams.js
+```
+
+### `Closure.js`
+
+Shows closure examples in JavaScript.
+
+Topics:
+
+- What a closure is
+- Inner function remembering outer function variables
+- Counter using closure
+- Private variable using closure
+- Closure interview explanation
+
+Run:
+
+```powershell
+node Chapter_8_Functions/Closure.js
+```
+
+### `FunctionInterviewQuestions.js`
+
+Contains JavaScript function interview questions with answers, explanations, practical coding tasks, and runnable examples.
+
+Topics:
+
+- Function declaration vs function expression
+- Hoisting behavior
+- Arrow functions
+- `this` in normal functions and arrow functions
+- `arguments` object
+- Default parameters
+- Rest parameters
+- Callback functions
+- Higher-order functions
+- Closures
+- IIFE
+- Pure functions
+- Recursion
+- Practical coding questions with functions
+
+Run:
+
+```powershell
+node Chapter_8_Functions/FunctionInterviewQuestions.js
+```
 
 ### `ArrowFunction.js`
 
@@ -408,7 +613,8 @@ Topics:
 - Short arrow function syntax
 - Returning values from arrow functions
 - Using template literals inside arrow functions
-- Basic difference between regular functions and arrow functions
+- `console.table()` comparison of normal functions and arrow functions
+- Basic differences between regular functions and arrow functions
 
 Run:
 
@@ -416,57 +622,45 @@ Run:
 node Chapter_8_Functions/ArrowFunction.js
 ```
 
-### `Introduction.js`
+### `IIFE.js`
 
-Introduces JavaScript functions and methods.
+Shows Immediately Invoked Function Expression examples.
 
 Topics:
 
-- Function as a reusable block of code
-- Calling or invoking a function
-- Defining a function with the `function` keyword
-- Difference between a function and a method
+- What an IIFE is
+- Normal function IIFE
+- Arrow function IIFE
+- IIFE with parameters
+- Returning values from an IIFE
+- Creating private scope with an IIFE
+- Using an IIFE for setup/config code
 
 Run:
 
 ```powershell
-node Chapter_8_Functions/Introduction.js
+node Chapter_8_Functions/IIFE.js
 ```
 
-### `Type2Function.js`
+## Quick References
 
-Shows different function examples based on arguments and return values.
-
-Topics:
-
-- Function with argument and no return value
-- Function with no argument and return value
-- Function with argument and return value
-- Understanding `undefined` when a function does not return anything
-
-Run:
-
-```powershell
-node Chapter_8_Functions/Type2Function.js
-```
-
-## Variable Declaration Quick Reference
+### Variable Declaration
 
 ```javascript
-var city = "Pune";      // old style, function-scoped
-let age = 25;           // modern style, block-scoped, value can change
+var city = "Pune";       // old style, function-scoped
+let age = 25;            // modern style, block-scoped, value can change
 const country = "India"; // modern style, block-scoped, value should not change
 ```
 
-Prefer `let` when a value can change and `const` when it should stay the same.
+Prefer `const` by default. Use `let` when a value must change. Avoid `var` in modern JavaScript unless you are learning older behavior.
 
-## Scope Of `var`, `let`, And `const`
+### Scope Of `var`, `let`, And `const`
 
 | Keyword | Scope | Can be re-declared? | Can be updated? | Hoisting behavior | Best use |
 | --- | --- | --- | --- | --- | --- |
 | `var` | Function scope | Yes | Yes | Hoisted and initialized with `undefined` | Older JavaScript code |
-| `let` | Block scope | No, not in the same scope | Yes | Hoisted but not initialized, so accessing before declaration gives `ReferenceError` | Values that need to change |
-| `const` | Block scope | No, not in the same scope | No | Hoisted but not initialized, so accessing before declaration gives `ReferenceError` | Values that should not be reassigned |
+| `let` | Block scope | No, not in the same scope | Yes | Hoisted but not initialized | Values that need to change |
+| `const` | Block scope | No, not in the same scope | No | Hoisted but not initialized | Values that should not be reassigned |
 
 ### Function Scope Example With `var`
 
@@ -495,13 +689,14 @@ if (true) {
 // console.log(country);  // Error because const has block scope
 ```
 
-## Variable Naming Rules
+### Variable Naming Rules
 
 - Variable names can contain letters, numbers, `_`, and `$`.
 - Variable names cannot start with a number.
 - Variable names cannot contain spaces.
 - Variable names are case-sensitive.
 - JavaScript reserved keywords cannot be used as variable names.
+- Prefer `camelCase` for normal JavaScript variables.
 
 Examples:
 
@@ -512,7 +707,7 @@ let $salary = 50000;
 let totalMarks1 = 95;
 ```
 
-## Useful VS Code Shortcuts For Windows
+### Useful VS Code Shortcuts For Windows
 
 | Shortcut | Use |
 | --- | --- |
@@ -522,7 +717,7 @@ let totalMarks1 = 95;
 | `Ctrl + S` | Save file |
 | `Ctrl + F` | Find text |
 | `Ctrl + H` | Replace text |
-| `Ctrl + `` | Open or close terminal |
+| ``Ctrl + ` `` | Open or close terminal |
 | `Ctrl + P` | Quickly open a file |
 | `Ctrl + Shift + P` | Open command palette |
 
@@ -532,3 +727,4 @@ let totalMarks1 = 95;
 - Prefer `camelCase` for normal JavaScript variables.
 - Prefer `const` by default, and use `let` only when the value must change.
 - Avoid `var` in modern JavaScript unless you are learning how older code behaves.
+- Keep each practice file focused on one concept.
