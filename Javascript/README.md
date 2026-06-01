@@ -52,8 +52,10 @@ Javascript/
 |   +-- Closure.js
 |   +-- DefaultAndRestParams.js
 |   +-- FunctionInterviewQuestions.js
+|   +-- HigherOrderFunction.js
 |   +-- IIFE.js
 |   +-- Introduction.js
+|   +-- PureAndImpureFunction.js
 |   +-- Type2Function.js
 +-- Interview_Quesions/
 |   +-- Chapter_01_Basics_Interview.js
@@ -78,7 +80,7 @@ Javascript/
 | 05 | `Chapter_05_Statements` | `if`, `else if`, `else`, complex conditions, switch case |
 | 06 | `Chapter_6_Loops` | `for`, `while`, `do while`, loop examples, retry examples |
 | 07 | `Chapter_7_Arrays` | Array creation, access, manipulation, iteration, sorting, slicing, combining |
-| 08 | `Chapter_8_Functions` | Function basics, function types, closures, default parameters, rest parameters, arrow functions, IIFE, interview questions |
+| 08 | `Chapter_8_Functions` | Function basics, function types, closures, default parameters, rest parameters, higher-order functions, pure and impure functions, arrow functions, IIFE, interview questions |
 
 ## Interview Questions
 
@@ -93,7 +95,7 @@ The `Interview_Quesions` folder contains chapter-wise JavaScript interview pract
 | `Chapter_05_Statements_Interview.js` | `if`, `else if`, `switch`, conditions |
 | `Chapter_06_Loops_Interview.js` | `for`, `while`, `do while`, `break`, loop practice |
 | `Chapter_07_Arrays_Interview.js` | Array access, manipulation, sorting, filtering, mapping |
-| `Chapter_08_Functions_Interview.js` | Functions, callbacks, closures, IIFE, recursion |
+| `Chapter_08_Functions_Interview.js` | Functions, callbacks, higher-order functions, closures, pure and impure functions, IIFE, recursion |
 
 Run examples:
 
@@ -600,6 +602,47 @@ Run:
 
 ```powershell
 node Chapter_8_Functions/FunctionInterviewQuestions.js
+```
+
+### `HigherOrderFunction.js`
+
+Shows higher-order function examples in JavaScript.
+
+Topics:
+
+- Function accepting another function as an argument
+- Callback functions
+- Anonymous function callbacks
+- Arrow function callbacks
+- Higher-order array methods like `filter()` and `map()`
+- Function returning another function
+- Practical retry function using callback
+
+Run:
+
+```powershell
+node Chapter_8_Functions/HigherOrderFunction.js
+```
+
+### `PureAndImpureFunction.js`
+
+Shows pure and impure function examples in JavaScript.
+
+Topics:
+
+- What a pure function is
+- Same input gives same output
+- Avoiding side effects
+- Returning a new array without changing the original array
+- What an impure function is
+- Changing outside variables
+- Mutating original arrays
+- Depending on random values
+
+Run:
+
+```powershell
+node Chapter_8_Functions/PureAndImpureFunction.js
 ```
 
 ### `ArrowFunction.js`

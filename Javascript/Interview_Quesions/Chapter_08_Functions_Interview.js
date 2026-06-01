@@ -75,7 +75,72 @@ processResult("Login test", function(message) {
     console.log(message);
 });
 
-console.log("\nQ7. What is closure?");
+console.log("\nQ7. What is a higher-order function?");
+console.log("Answer: A higher-order function accepts another function as an argument or returns another function.");
+
+function calculate(num1, num2, operation) {
+    return operation(num1, num2);
+}
+
+const additionResult = calculate(10, 20, function(a, b) {
+    return a + b;
+});
+
+const multiplicationResult = calculate(10, 20, function(a, b) {
+    return a * b;
+});
+
+console.log("Higher-order addition:", additionResult);
+console.log("Higher-order multiplication:", multiplicationResult);
+
+console.log("\nQ8. Practical: Use higher-order array functions map and filter.");
+console.log("Answer: map transforms array values. filter returns values that match a condition.");
+
+const testCases = [
+    { name: "Login test", status: "Passed" },
+    { name: "Payment test", status: "Failed" },
+    { name: "Search test", status: "Passed" }
+];
+
+const testNames = testCases.map(function(testCase) {
+    return testCase.name;
+});
+
+const passedTests = testCases.filter(function(testCase) {
+    return testCase.status === "Passed";
+});
+
+console.log("Test names:", testNames);
+console.log("Passed tests:", passedTests);
+
+console.log("\nQ9. Practical: Write a higher-order retry function.");
+console.log("Answer: Pass the action as a callback and call it until it passes or reaches max attempts.");
+
+function retryAction(action, maxAttempts) {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        const result = action(attempt);
+
+        console.log(`Attempt ${attempt}:`, result);
+
+        if (result === "Passed") {
+            return "Final result: Passed";
+        }
+    }
+
+    return "Final result: Failed";
+}
+
+const retryResult = retryAction(function(attempt) {
+    if (attempt === 3) {
+        return "Passed";
+    }
+
+    return "Failed";
+}, 5);
+
+console.log(retryResult);
+
+console.log("\nQ10. What is closure?");
 console.log("Answer: A closure is when an inner function remembers variables from its outer function.");
 
 function createCounter() {
@@ -91,14 +156,60 @@ const counter = createCounter();
 console.log("Counter:", counter());
 console.log("Counter:", counter());
 
-console.log("\nQ8. What is an IIFE?");
+console.log("\nQ11. What is a pure function?");
+console.log("Answer: A pure function gives the same output for the same input and does not change outside data.");
+
+function pureAdd(num1, num2) {
+    return num1 + num2;
+}
+
+console.log("Pure function result:", pureAdd(10, 20));
+console.log("Pure function same result:", pureAdd(10, 20));
+
+console.log("\nQ12. What is an impure function?");
+console.log("Answer: An impure function can change outside data or depend on outside state.");
+
+let interviewCounter = 0;
+
+function impureIncrement() {
+    interviewCounter++;
+    return interviewCounter;
+}
+
+console.log("Impure function result:", impureIncrement());
+console.log("Impure function result:", impureIncrement());
+console.log("Outside variable changed:", interviewCounter);
+
+console.log("\nQ13. Practical: Convert an impure array function into a pure function.");
+console.log("Answer: Do not mutate the original array. Return a new array instead.");
+
+function addTestImpure(tests, testName) {
+    tests.push(testName);
+    return tests;
+}
+
+function addTestPure(tests, testName) {
+    return [...tests, testName];
+}
+
+const originalTests = ["Login", "Search"];
+
+console.log("Impure add result:", addTestImpure(originalTests, "Payment"));
+console.log("Original tests after impure add:", originalTests);
+
+const cleanTests = ["Login", "Search"];
+
+console.log("Pure add result:", addTestPure(cleanTests, "Payment"));
+console.log("Original tests after pure add:", cleanTests);
+
+console.log("\nQ14. What is an IIFE?");
 console.log("Answer: IIFE runs immediately after it is created.");
 
 (function() {
     console.log("IIFE executed");
 })();
 
-console.log("\nQ9. Practical: Write a function to find largest number.");
+console.log("\nQ15. Practical: Write a function to find largest number.");
 
 function findLargest(...numbers) {
     let largest = numbers[0];
@@ -114,7 +225,7 @@ function findLargest(...numbers) {
 
 console.log("Largest:", findLargest(10, 55, 23, 90, 4));
 
-console.log("\nQ10. Practical: Write a function factory for discount.");
+console.log("\nQ16. Practical: Write a function factory for discount.");
 
 function createDiscount(discountPercentage) {
     return function(price) {
@@ -125,7 +236,7 @@ function createDiscount(discountPercentage) {
 const tenPercentDiscount = createDiscount(10);
 console.log("Discounted price:", tenPercentDiscount(1000));
 
-console.log("\nQ11. Practical: Write recursive factorial.");
+console.log("\nQ17. Practical: Write recursive factorial.");
 
 function factorial(number) {
     if (number === 0 || number === 1) {
