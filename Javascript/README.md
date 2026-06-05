@@ -57,6 +57,13 @@ Javascript/
 |   +-- Introduction.js
 |   +-- PureAndImpureFunction.js
 |   +-- Type2Function.js
++-- Chapter_9_Strings/
+|   +-- Introduction.js
+|   +-- SearchString.js
++-- Chapter_10_Objects/
+|   +-- DeconstructObject.js
+|   +-- Introduction.js
+|   +-- PrimitiveVsReference.js
 +-- Interview_Quesions/
 |   +-- Chapter_01_Basics_Interview.js
 |   +-- Chapter_02_Declarations_Interview.js
@@ -66,6 +73,8 @@ Javascript/
 |   +-- Chapter_06_Loops_Interview.js
 |   +-- Chapter_07_Arrays_Interview.js
 |   +-- Chapter_08_Functions_Interview.js
+|   +-- Chapter_09_Strings_Interview.js
+|   +-- Chapter_10_Objects_Interview.js
 +-- README.md
 ```
 
@@ -81,6 +90,8 @@ Javascript/
 | 06 | `Chapter_6_Loops` | `for`, `while`, `do while`, loop examples, retry examples |
 | 07 | `Chapter_7_Arrays` | Array creation, access, manipulation, iteration, sorting, slicing, combining |
 | 08 | `Chapter_8_Functions` | Function basics, function types, closures, default parameters, rest parameters, higher-order functions, pure and impure functions, arrow functions, IIFE, interview questions |
+| 09 | `Chapter_9_Strings` | String creation, conversion, length, case methods, searching, slicing, replacing, trimming, splitting, concatenation |
+| 10 | `Chapter_10_Objects` | Object literals, constructor functions, `Object.create()`, object methods, nested objects, destructuring, reference behavior, object copying |
 
 ## Interview Questions
 
@@ -96,12 +107,16 @@ The `Interview_Quesions` folder contains chapter-wise JavaScript interview pract
 | `Chapter_06_Loops_Interview.js` | `for`, `while`, `do while`, `break`, loop practice |
 | `Chapter_07_Arrays_Interview.js` | Array access, manipulation, sorting, filtering, mapping |
 | `Chapter_08_Functions_Interview.js` | Functions, callbacks, higher-order functions, closures, pure and impure functions, IIFE, recursion |
+| `Chapter_09_Strings_Interview.js` | Strings, template literals, conversion, searching, slicing, replacing, splitting, trimming, concatenation |
+| `Chapter_10_Objects_Interview.js` | Objects, properties, methods, `this`, constructor functions, `Object.create()`, references, shallow copies, nested objects, destructuring |
 
 Run examples:
 
 ```powershell
 node Interview_Quesions/Chapter_01_Basics_Interview.js
 node Interview_Quesions/Chapter_08_Functions_Interview.js
+node Interview_Quesions/Chapter_09_Strings_Interview.js
+node Interview_Quesions/Chapter_10_Objects_Interview.js
 ```
 
 ## Chapter 01: Basics
@@ -683,6 +698,113 @@ Run:
 
 ```powershell
 node Chapter_8_Functions/IIFE.js
+```
+
+## Chapter 09: Strings
+
+### `Introduction.js`
+
+Introduces JavaScript strings and common string methods.
+
+Topics:
+
+- Creating strings with single quotes, double quotes, and backticks
+- Multi-line strings with template literals
+- Converting values to strings with `String()`
+- Checking string length with `.length`
+- Changing case with `toUpperCase()` and `toLowerCase()`
+- Searching with `includes()`, `startsWith()`, `endsWith()`, and `indexOf()`
+- Extracting text with `slice()`
+- Replacing text with `replace()`
+- Accessing characters using index, `charAt()`, `at()`, and `charCodeAt()`
+
+Run:
+
+```powershell
+node Chapter_9_Strings/Introduction.js
+```
+
+### `SearchString.js`
+
+Shows string searching and cleanup examples using a URL and name values.
+
+Topics:
+
+- Checking text with `includes()`, `startsWith()`, and `endsWith()`
+- Finding positions with `indexOf()`, `lastIndexOf()`, and `search()`
+- Extracting part of a string with `slice()`
+- Replacing text with `replace()`
+- Splitting strings with `split()`
+- Reading values from the split result
+- Removing spaces with `trim()`, `trimStart()`, and `trimEnd()`
+- Removing all spaces with a regular expression
+- Concatenating strings with `+` and template literals
+
+Run:
+
+```powershell
+node Chapter_9_Strings/SearchString.js
+```
+
+## Chapter 10: Objects
+
+### `Introduction.js`
+
+Introduces JavaScript objects and different ways to work with object data.
+
+Topics:
+
+- Creating objects with object literal syntax
+- Accessing object properties with dot notation
+- Creating objects with constructor functions
+- Creating objects with `Object.create()`
+- Adding methods inside objects
+- Using `this` inside an object method
+- Understanding copy by reference
+- Copying objects with `Object.assign()`
+- Copying objects with the spread operator
+- Working with nested objects and arrays
+
+Run:
+
+```powershell
+node Chapter_10_Objects/Introduction.js
+```
+
+### `DeconstructObject.js`
+
+Shows object destructuring, also called extracting object properties into variables.
+
+Topics:
+
+- Creating an object with properties
+- Extracting object values using destructuring syntax
+- Creating variables from object property names
+- Reading destructured values directly
+
+Run:
+
+```powershell
+node Chapter_10_Objects/DeconstructObject.js
+```
+
+### `PrimitiveVsReference.js`
+
+Explains the difference between primitive values and reference values.
+
+Topics:
+
+- Copying primitive values
+- Reassigning primitive variables
+- Assigning one object variable to another object variable
+- Understanding that object variables can point to the same object
+- Updating an object through another reference
+- Creating a separate object copy with `Object.assign({}, objectName)`
+
+Run:
+
+```powershell
+node Chapter_10_Objects/PrimitiveVsReference.js
 ```
 
 ## Quick References
